@@ -1,21 +1,37 @@
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
-import { SafeAreaView } from 'react-native-safe-area-context';
-import Games from './screens/Games';
+import Game from './screens/Games';
+import Home from './screens/Home';
+import HowToPlay from './screens/HowToPlay';
+import About from './screens/About';
+import { NavigationContainer } from "@react-navigation/native";
+import { createStackNavigator } from "@react-navigation/stack";
+const Stack = createStackNavigator();
 export default function App() {
-  return (
-    <SafeAreaView style={styles.container}>
-      <Games/>
-      <StatusBar style="auto" />
-    </SafeAreaView>
-  );
+    return (
+      <NavigationContainer>
+      <Stack.Navigator initialRouteName="Home">
+        <Stack.Screen
+          name="Home"
+          component={Home}
+          options={{ headerShown: false }}
+        />
+        <Stack.Screen
+          name="HowToPlay"
+          component={HowToPlay}
+          options={{ headerShown: false }}
+        />
+        <Stack.Screen
+          name="Game"
+          component={Game}
+          options={{ headerShown: false }}
+        />
+        <Stack.Screen
+          name="About"
+          component={About}
+          options={{ headerShown: false }}
+        />
+      </Stack.Navigator>
+      <StatusBar style="auto"></StatusBar>
+    </NavigationContainer>
+    );
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
