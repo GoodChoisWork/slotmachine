@@ -21,10 +21,17 @@
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "package": "com.goodchois.work.slotmachine"
     },
     "web": {
       "favicon": "./assets/favicon.png"
-    }
+    },
+    "extra": {
+      "eas": {
+        "projectId": "5d61d77c-1c10-49fb-99b5-6b729eedcaac"
+      }
+    },
+    "owner": "goodchois.work"
   }
 }
