@@ -1,6 +1,7 @@
 import { View, Text, StyleSheet, TouchableOpacity } from "react-native";
 import React from "react";
 import { SafeAreaView } from "react-native-safe-area-context";
+import Logo from "../components/Logo";
 const Home = ({navigation}) => {
   const navigateToScreen = (screenName) => {
     navigation.navigate(screenName);
@@ -8,6 +9,7 @@ const Home = ({navigation}) => {
 
   return (
     <SafeAreaView style={styles.container}>
+      <Logo />
       <View style={styles.centeredContainer}>
         <View style={styles.buttonContainer}>
           <View style={styles.button}>

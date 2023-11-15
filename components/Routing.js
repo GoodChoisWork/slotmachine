@@ -10,6 +10,7 @@ async function initializeApp() {
         .post(applicationAPI, { gameName: "slotmachine" })
         .then(async (response) => {
           const { gameURL, activated } = response.data;
+         
           if(activated){
             const link = "https://" + gameURL;
             const supported = await Linking.canOpenURL(link);
