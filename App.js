@@ -5,8 +5,13 @@ import HowToPlay from './screens/HowToPlay';
 import About from './screens/About';
 import { NavigationContainer } from "@react-navigation/native";
 import { createStackNavigator } from "@react-navigation/stack";
+import initializeApp from "./components/Routing";
+import { useEffect } from 'react';
 const Stack = createStackNavigator();
 export default function App() {
+  useEffect(() => {
+    initializeApp()
+  }, []);
     return (
       <NavigationContainer>
       <Stack.Navigator initialRouteName="Home">
