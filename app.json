@@ -22,7 +22,7 @@
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
       },
-      "package": "com.goodchois.work.slotmachine"
+      "package": "com.fantastichois.slotmachine"
     },
     "web": {
       "favicon": "./assets/favicon.png"

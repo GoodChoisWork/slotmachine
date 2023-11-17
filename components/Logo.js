@@ -5,7 +5,6 @@ const Logo = () => {
   return (
     <View style={styles.container}>
       <Image source={require('../assets/icon.png')} style={styles.image} resizeMode='contain'/>
-      <Text style={styles.logoText}>Slot Machine</Text>
     </View>
   )
 }

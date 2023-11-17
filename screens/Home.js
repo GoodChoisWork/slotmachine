@@ -1,4 +1,4 @@
-import { View, Text, StyleSheet, TouchableOpacity } from "react-native";
+import { View, Text, StyleSheet, TouchableOpacity, ImageBackground } from "react-native";
 import React from "react";
 import { SafeAreaView } from "react-native-safe-area-context";
 import Logo from "../components/Logo";
@@ -9,6 +9,11 @@ const Home = ({navigation}) => {
 
   return (
     <SafeAreaView style={styles.container}>
+      <ImageBackground
+        source={require("../assets/background/bg-1.png")}
+        resizeMode="cover"
+        style={styles.backgroundImage}
+      > 
       <Logo />
       <View style={styles.centeredContainer}>
         <View style={styles.buttonContainer}>
@@ -31,6 +36,7 @@ const Home = ({navigation}) => {
           </View>
         </View>
       </View>
+      </ImageBackground>
     </SafeAreaView>
   );
 };
@@ -47,6 +53,13 @@ const styles = StyleSheet.create({
   buttonContainer: {
     alignItems: "center",
     marginTop: 20,
+  },
+  backgroundImage: {
+    flex: 1,
+    width: "100%",
+    height: "100%",
+    justifyContent: "center",
+    alignItems: "center",
   },
   button: {
     backgroundColor: "#3f08a6",
