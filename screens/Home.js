@@ -10,7 +10,7 @@ const Home = ({navigation}) => {
   return (
     <SafeAreaView style={styles.container}>
       <ImageBackground
-        source={require("../assets/background/bg-1.png")}
+        source={require("../assets/background/bg-1.jpg")}
         resizeMode="cover"
         style={styles.backgroundImage}
       > 

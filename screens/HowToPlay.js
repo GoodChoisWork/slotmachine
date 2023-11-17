@@ -1,9 +1,14 @@
-import { View, Text, StyleSheet, ScrollView } from "react-native";
+import { View, Text, StyleSheet, ScrollView, ImageBackground } from "react-native";
 import React from "react";
 import { SafeAreaView } from "react-native-safe-area-context";
 const HowToPlay = () => {
   return (
-    <SafeAreaView>
+    <SafeAreaView style={styles.container}>
+    <ImageBackground
+      source={require("../assets/background/bg-1.jpg")}
+      resizeMode="cover"
+      style={styles.backgroundImage}
+    > 
       <ScrollView>
         <View style={styles.flexTitle}>
           <Text style={styles.title}>How To Play</Text>
@@ -144,6 +149,7 @@ const HowToPlay = () => {
           </Text>
         </View>
       </ScrollView>
+      </ImageBackground>
     </SafeAreaView>
   );
 };
@@ -153,22 +159,26 @@ const styles = StyleSheet.create({
     display: "flex",
     justifyContent: "center",
     alignItems: "center",
+    color : 'white'
   },
 
   title: {
     padding: 20,
     fontSize: 40,
+    color : 'white'
   },
 
   textIntro: {
     fontSize: 25,
     padding: 10,
     textAlign: "justify",
+    color : 'white'
   },
 
   titleSemi: {
     fontSize: 30,
     paddingLeft: 10,
+    color : 'white'
   },
 
   textHow: {
@@ -178,6 +188,7 @@ const styles = StyleSheet.create({
     paddingBottom: 10,
     paddingTop: 10,
     textAlign: "justify",
+    color : 'white'
   },
 });
 
