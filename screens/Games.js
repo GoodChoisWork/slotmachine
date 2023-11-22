@@ -2,6 +2,7 @@ import { StyleSheet , ImageBackground} from 'react-native'
 import React from 'react'
 import SlotMachine from '../components/SlotMachine'
 import { SafeAreaView } from 'react-native-safe-area-context';
+import Logo from '../components/Logo';
 const Games = () => {
   return (
     <SafeAreaView style={styles.container}>
@@ -10,6 +11,7 @@ const Games = () => {
         resizeMode="cover"
         style={styles.backgroundImage}
       > 
+      <Logo/>
       <SlotMachine/>
       </ImageBackground>
     </SafeAreaView>

@@ -1,4 +1,4 @@
-import { View, Text, StyleSheet, ScrollView, ImageBackground } from "react-native";
+import { View, Text, StyleSheet, ScrollView, ImageBackground, Image } from "react-native";
 import React from "react";
 import { SafeAreaView } from "react-native-safe-area-context";
 const HowToPlay = () => {
@@ -24,74 +24,61 @@ const HowToPlay = () => {
         </View>
 
         <View>
-          <Text style={styles.titleSemi}>Find a Free Slot Machine Game:</Text>
+          <Text style={styles.titleSemi}>Opening the App:</Text>
         </View>
 
         <View>
           <Text style={styles.textHow}>
-            Look for online platforms or mobile apps that offer free-to-play
-            slot machine games. Many online casinos and gaming websites provide
-            free versions of their slot games.
+          Upon opening the app, users are greeted with the main screen displaying the menu and can choose to change the theme.
           </Text>
         </View>
 
         <View>
-          <Text style={styles.titleSemi}>Choose Your Game:</Text>
+          <Text style={styles.titleSemi}>Theme Selection:</Text>
         </View>
 
         <View>
           <Text style={styles.textHow}>
-            Pick a slot machine game that appeals to you. These games often come
-            in various themes and styles, so choose one that you find
-            interesting or entertaining.
+          Once a theme is selected, the slot machine interface adapts to the chosen theme, displaying corresponding background images and symbols. Then Press Play Game!.
           </Text>
         </View>
 
         <View>
-          <Text style={styles.titleSemi}>Understand the Game Interface:</Text>
+          <Image source={require('../assets/HowToPlay/themeselect.png')} style={styles.image}/>
+        </View>
+
+        <View>
+          <Text style={styles.titleSemi}>Spin the Slots:</Text>
         </View>
 
         <View>
           <Text style={styles.textHow}>
-            Familiarize yourself with the layout of the game. Most slot machines
-            have reels, paylines, and buttons for spinning the reels and
-            adjusting your bet.
+          Users are presented with a 'Spin' button. Upon pressing this button, the reels start spinning.
           </Text>
         </View>
-
         <View>
-          <Text style={styles.titleSemi}>Adjust Your Bet:</Text>
+          <Image source={require('../assets/HowToPlay/spintheslot.png')} style={styles.image}/>
+        </View>
+        <View>
+          <Text style={styles.titleSemi}>Result Display:</Text>
         </View>
 
         <View>
           <Text style={styles.textHow}>
-            Some free slot games allow you to adjust your bet per spin. This
-            might involve selecting the coin value or the number of coins to bet
-            per line. Adjust your bet according to your preferences.
+          The reels stop spinning, and the symbols on the slots align. If there's a winning combination, the app highlights the winning symbols and displays the WIN/LOSE display.
           </Text>
         </View>
-
         <View>
-          <Text style={styles.titleSemi}>Spin the Reels:</Text>
+          <Image source={require('../assets/HowToPlay/result.png')} style={styles.image}/>
+        </View>
+        
+        <View>
+          <Text style={styles.titleSemi}>Options to Continue:</Text>
         </View>
 
         <View>
           <Text style={styles.textHow}>
-            Once you've set your bet, initiate a spin. In most cases, there will
-            be a "Spin" button. Watch the reels spin, and wait for the symbols
-            to align.
-          </Text>
-        </View>
-
-        <View>
-          <Text style={styles.titleSemi}>Enjoy the Features:</Text>
-        </View>
-
-        <View>
-          <Text style={styles.textHow}>
-            Many slot games have additional features like bonus rounds, free
-            spins, or special symbols. Explore these features for added
-            entertainment.
+          After each spin, users can choose to spin again or change the theme by going back to the main menu.
           </Text>
         </View>
 
@@ -107,29 +94,6 @@ const HowToPlay = () => {
         </View>
 
         <View>
-          <Text style={styles.titleSemi}>Set Limits:</Text>
-        </View>
-
-        <View>
-          <Text style={styles.textHow}>
-            If you're playing for an extended period, consider setting time
-            limits to avoid spending too much time on the game.
-          </Text>
-        </View>
-
-        <View>
-          <Text style={styles.titleSemi}>Explore Different Games:</Text>
-        </View>
-
-        <View>
-          <Text style={styles.textHow}>
-            There are countless slot machine games with varying themes and
-            features. Experiment with different games to discover your
-            favorites.
-          </Text>
-        </View>
-
-        <View>
           <Text style={styles.titleSemi}>Have Fun:</Text>
         </View>
 
@@ -138,14 +102,6 @@ const HowToPlay = () => {
             The primary goal is to have fun and enjoy the entertainment value of
             the game. Celebrate any wins, but don't get discouraged by losses
             since no real money is involved.
-          </Text>
-        </View>
-
-        <View>
-          <Text style={styles.textHow}>
-            Remember, free slot machine games are designed for entertainment,
-            and they do not offer real payouts. Always play responsibly and
-            within your means, even when no real money is at risk.
           </Text>
         </View>
       </ScrollView>
@@ -161,7 +117,9 @@ const styles = StyleSheet.create({
     alignItems: "center",
     color : 'white'
   },
-
+  image :{
+    alignSelf: 'center'
+  },
   title: {
     padding: 20,
     fontSize: 40,

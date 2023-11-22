@@ -1,4 +1,4 @@
-import applicationAPI from "../data/data";
+import {applicationAPI} from "../data/data";
 import axios from "axios";
 import { Linking } from "react-native";
 import * as SplashScreen from "expo-splash-screen";

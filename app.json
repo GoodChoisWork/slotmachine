@@ -2,7 +2,7 @@
   "expo": {
     "name": "slotmachine",
     "slug": "slotmachine",
-    "version": "1.0.1",
+    "version": "1.0.5",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "userInterfaceStyle": "light",
@@ -16,7 +16,8 @@
     ],
     "ios": {
       "supportsTablet": true,
-      "bundleIdentifier": "com.fantastichois.slotmachine"
+      "bundleIdentifier": "com.amazingchoi.slotmachine",
+      "buildNumber": "2"
     },
     "android": {
       "adaptiveIcon": {
@@ -24,7 +25,7 @@
         "backgroundColor": "#ffffff"
       },
       "versionCode": 2,
-      "package": "com.fantastichois.slotmachine"
+      "package": "com.amazingchoi.slotmachine"
     },
     "web": {
       "favicon": "./assets/favicon.png"
