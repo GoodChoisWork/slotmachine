@@ -17,6 +17,7 @@ const SlotMachine = () => {
         setSelectedSymbols2(themes[thm]['symbols'][1].image)
         setSelectedSymbols3(themes[thm]['symbols'][2].image)
       }else{
+        setSymbols(themes['cards']['symbols'])
         setSelectedSymbols1(themes['cards']['symbols'][0].image)
         setSelectedSymbols2(themes['cards']['symbols'][1].image)
         setSelectedSymbols3(themes['cards']['symbols'][2].image)
